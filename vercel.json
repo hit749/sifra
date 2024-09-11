@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "sifra/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "sifra/wsgi.py"
+      }
+    ]
+}
